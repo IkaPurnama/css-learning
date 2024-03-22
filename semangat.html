@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semangat Manis</title>
+</head>
+<body >
+    <h1>Hi Manis!</h1>
+    <img src="https://media.tenor.com/kl_HHAGP2X8AAAAi/bunny-i-love-you.gif"/>
+    <h1>Semangat Kerjanyaaa!</h1>
+    <button id="btn_mau" onclick="alert('SEMANGAT MANISNYA AKUUUU! I LOVE YOUU')">Siapp</button>
+    <button id="btn_gamau" onclick="gamau(this)" style="position: absolute">Gamau</button>
+</body>
+<script>
+    function gamau(id){
+        var mau = document.getElementById("btn_mau");
+        var i = Math.floor(Math.random() * 300) + 1;
+        var j = Math.floor(Math.random() * 100) + mau.offsetTop;
+        id.style.left = i + "px";
+        id.style.top = j + "px";
+    }
+</script>
+</html>
